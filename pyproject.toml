@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "circuit-debugger"
+version = "0.1.0"
+description = "Detect breadboard components from a photo, rebuild the connections and spot wiring mistakes."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Shysta" }]
+dependencies = [
+    "networkx>=3.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

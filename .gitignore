@@ -1,8 +1,30 @@
+# Python
 __pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environments
 .venv/
 venv/
 .env
-*.pyc
+
+# Tooling caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Notebooks
 .ipynb_checkpoints/
+
+# ML / data
 runs/
 data/raw/
+*.pt
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
